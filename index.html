@@ -4,13 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock & EDM Festival</title>
+    <title>Rock & Pop Festival</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & Pop Festival</h1>
+
+            <nav class="navegacion-principal">
+                <a href="#">Line Up</a>
+                <a href="#">Galeria</a>
+                <a href="#">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & Pop Festival</h2>
+                <p>Julio 2022, CDMX</p>
+            </div>  
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+    
+    <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="imagen vocalista">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & Pop Festival</h2>
+            <p class="fecha">Julio 2022, CDMX</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Deserunt molestias quas accusamus temporibus nulla error, praesentium, 
+              voluptatem illo explicabo cupiditate ab, 
+              quo maiores iure doloribus. Nulla dolorum ipsa explicabo vero?    
+            </p>
+        </div>
+    </section>
+
+    <section class="lineup">
+        <h3>Line Up</h3>
+        <p class="dia">Viernes 21</p>
+
+        <div class="escenario-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Kings of Lion</span>
+                    </li>
+                    <li>
+                        19:00 | <span>The Strokes</span>
+                    </li>
+                    <li>
+                        18:00 | <span>The Smiths</span>
+                    </li>
+                    <li>
+                        16:00 | <span>The Bleatles</span>
+                    </li>
+                </ul>
+            </div><!--Fin de escenario-->
+
+            <div class="escenario pop bg-verde">
+                <p class="nombre-escenario">Escenario Pop</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>ColdPlay</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Imagine Dragons</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Concorde</span>
+                    </li>
+                    <li>
+                        18:00 | <span>The Lumineers</span>
+                    </li>
+                    <li>
+                        16:00 | <span>Seafret</span>
+                    </li>
+                </ul>
+            </div>
+        </div><!--Fin de escenario-contenedor-->
+
+        <p class="dia">Sabado 22</p>
+
+        <div class="escenario-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Kings of Lion</span>
+                    </li>
+                    <li>
+                        19:00 | <span>The Strokes</span>
+                    </li>
+                    <li>
+                        18:00 | <span>The Smiths</span>
+                    </li>
+                    <li>
+                        16:00 | <span>The Bleatles</span>
+                    </li>
+                </ul>
+            </div><!--Fin de escenario-->
+
+            <div class="escenario pop bg-amarillo">
+                <p class="nombre-escenario">Escenario Pop</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>ColdPlay</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Imagine Dragons</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Concorde</span>
+                    </li>
+                    <li>
+                        18:00 | <span>The Lumineers</span>
+                    </li>
+                    <li>
+                        16:00 | <span>Seafret</span>
+                    </li>
+                </ul>
+            </div>
+        </div><!--Fin de escenario-contenedor-->
+
+    </section>
 
 </body>
 </html>
