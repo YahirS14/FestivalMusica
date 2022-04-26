@@ -57,6 +57,7 @@
 }
 .bg-amarillo{
     background-color: v.$amarillo;
+    margin-bottom: 2.5rem;
 
     li:nth-child(odd){//Selecciona los hijos del elemento en este caso odd selecciona lo inpares
         background-color: darken(v.$amarillo, 15%);//el primer valor es el color y el segundo el porcentaje a opacar
@@ -64,6 +65,7 @@
 }
 .bg-verde{
     background-color: v.$verde;
+    margin-bottom: 2.5rem;
 
     li:nth-child(odd){//Selecciona los hijos del elemento en este caso odd selecciona lo inpares
         background-color: darken(v.$verde, 15%);//el primer valor es el color y el segundo el porcentaje a opacar

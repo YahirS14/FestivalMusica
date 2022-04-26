@@ -55,14 +55,23 @@ function versionAvif(done){
     done();
 }
 
-function dev(done){
-    watch("src/scss/**/*.scss", css);//Busca el archivo a escuchar y manda a llamar una tarea
+function javaScipt(done){
+    src('src/js/**/*.js')
+        .pipe(dest('build/js'));
 
     done();
 }
 
-exports.dev = parallel(dev, versionWebp, imagenes, versionAvif);
+function dev(done){
+    watch("src/scss/**/*.scss", css);//Busca el archivo a escuchar y manda a llamar una tarea
+    watch("src/js/**/*.js", javaScipt);
+
+    done();
+}
+
+exports.dev = parallel(dev, versionWebp, imagenes, versionAvif, javaScipt);
 exports.css = css;
+exports.js = javaScipt;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
