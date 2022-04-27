@@ -354,6 +354,9 @@ body {
 body.fijar-body {
   overflow: hidden;
 }
+body.body.fijo {
+  padding-top: 8.6rem;
+}
 
 p {
   font-size: 2rem;
@@ -396,6 +399,15 @@ img {
 
 .header {
   background-color: #4CB8B3;
+}
+@media (min-width: 768px) {
+  .header.fijo {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #333;
+  }
 }
 .header h1 {
   color: #FFF;
@@ -652,6 +664,7 @@ img {
 
 .boletos {
   padding: 5rem 0;
+  margin-bottom: 0;
 }
 .boletos h3 {
   text-align: center;
@@ -704,5 +717,15 @@ img {
 .nombre-pase {
   text-align: center;
   font-size: 2.8rem;
+  color: #FFF;
+}
+
+.site-footer {
+  background-color: #F53756;
+  padding: 1rem;
+}
+.site-footer p {
+  margin: 0;
+  text-align: center;
   color: #FFF;
 }
